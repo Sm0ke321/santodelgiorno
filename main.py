@@ -1,10 +1,16 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+import os
+
+bot_token = os.getenv("BOT_TOKEN")
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
 
 plugins = dict(root="plugin")
 bot = Client("santodelgiorno",
-             api_id = 782440,
-             api_hash = "ce5ba256fd8298a482e6d847cdfcec94",
+             api_id = api_id,
+             api_hash = api_hash,
+             bot_token = bot_token,
              plugins = plugins)
 
 
