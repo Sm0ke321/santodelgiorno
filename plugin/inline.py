@@ -1,5 +1,5 @@
 from pyrogram import Client
-from pyrogram.types import InlineQueryResultPhoto
+from pyrogram.types import InlineQueryResultPhoto, InputTextMessageContent
 from utils import ottieniSanti
 
 @Client.on_inline_query()
